@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: url("./Fotos/70b54e57c74a15d5eb175045f3aa0203.png") no-repeat
+        center center/cover;
+}
+
+.container form {
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.container form h1 {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    align-items: center;
+    text-align: center;
+}
+
+.container form input {
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #ddd;
+}
+
+.container form input::placeholder {
+    color: #ddd;
+}
+
+.container form #email {
+    margin-left: 20px;
+}
+
+.container form h4 {
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #ddd;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 600px;
+    height: 80px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 194, 194, 0.713);
+}
+
+.container form #button {
+    border: none;
+    background: red;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+    width: 100px;
+    padding: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container form #button:hover {
+    background: #fff;
+    color: black;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .container form {
+        padding: 10px;
+        flex-direction: column;
+        width: 80%;
+        height: 460px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .container form h1 {
+        width: 100%;
+    }
+    .media {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container form textarea {
+        width: 100%;
+    }
+    .container form #email {
+        margin-left: 0px;
+    }
+    .container form input #button {
+        margin-top: 360px;
+    }
+}
